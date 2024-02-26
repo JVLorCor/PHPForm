@@ -1,0 +1,44 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.genero {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main-container h1 {
+    margin-bottom: 20px;
+}
+
+.main-container fieldset {
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+.main-container fieldset label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-container fieldset input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.main-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.main-container button:hover {
+    background-color: #0056b3;
+}
