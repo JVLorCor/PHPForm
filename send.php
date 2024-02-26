@@ -7,18 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sexo = $_REQUEST["sexo"];
     $correo = $_REQUEST["correo"];
     $telefono = $_REQUEST["telefono"];
-
-    $errors = [];
-    if (!empty($errors)) {
-        echo "<div class='error'>";
-        foreach ($errors as $error) {
-            echo "<p>$error</p>";
-        }
-        echo "</div>";
-    }
-
-    echo '<a href="./">Volver</a> <br>';
 }
+
+echo '<a href="./">Volver</a> <br>';
 
 ?>
 <!DOCTYPE html>
