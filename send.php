@@ -8,9 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_REQUEST["correo"];
     $telefono = $_REQUEST["telefono"];
 }
-
-echo '<a href="./">Volver</a> <br>';
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
