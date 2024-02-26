@@ -23,7 +23,7 @@
 
         <fieldset class="genero">
             <label for="sexo-masculino">Sexo:</label>
-            <input type="radio" name="sexo" id="sexo-masculino" value="masculino"  required> Masculino
+            <input type="radio" name="sexo" id="sexo-masculino" value="masculino" checked required> Masculino
             <input type="radio" name="sexo" id="sexo-femenino" value="femenino" required> Femenino
         </fieldset>
 
