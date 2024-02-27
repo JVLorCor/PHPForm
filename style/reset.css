@@ -1,58 +1,79 @@
 * {
     box-sizing: border-box;
     min-width: 0;
-}
-
-:root {
+    overflow: visible;
+  }
+  
+  :root {
     color-scheme: light dark;
-    --step-0: clamp(1rem, 0.913rem + 0.4348vi, 1.25rem);
-    --step-1: clamp(1.2rem, 1.0739rem + 0.6304vi, 1.5625rem);
-    --step-2: clamp(1.44rem, 1.2615rem + 0.8924vi, 1.9531rem);
-    --step-3: clamp(1.728rem, 1.4799rem + 1.2407vi, 2.4414rem);
-}
-
-html {
+    --step-0: clamp(1rem, calc(0.913rem + 0.4348vw), 1.25rem);
+    --step-1: clamp(1.2rem, calc(1.0739rem + 0.6304vw), 1.5625rem);
+    --step-2: clamp(1.44rem, calc(1.2615rem + 0.8924vw), 1.9531rem);
+    --step-3: clamp(1.728rem, calc(1.4799rem + 1.2407vw), 2.4414rem);
+  }
+  
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Add margin: 0 to remove default body margin */
+  }
+  
+  html {
     font-family: 'Onest', system-ui, sans-serif;
     scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    min-height: 100dvh;
+  }
+  
+  body {
     font-size: var(--step-0);
-    /* background-image: url("../img/background.jpg");
-    background-size: cover; */
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     text-wrap: balance;
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: var(--step-3);
-}
-
-h2 {
+  }
+  
+  h2 {
     font-size: var(--step-2);
-}
-
-h3 {
+  }
+  
+  h3 {
     font-size: var(--step-1);
-}
-
-p {
+  }
+  
+  p {
     text-wrap: pretty;
-}
-
-
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    h1 {
+      font-size: var(--step-2); /* Example: Adjust heading sizes for smaller screens */
     }
-}
+    .main-container {
+      padding: 20px; /* Example: Add padding for better layout on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust styles for even smaller screens here */
+    body {
+      font-size: var(--step-0); /* Example: Adjust base font size for very small screens */
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  

@@ -16,8 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datos Formulario</title>
-    <link rel="stylesheet" href="./style/svg.css">
-    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="../style/svg.css">
+    <link rel="stylesheet" href="../style/reset.css">
     <style>
         .main-container {
             display: flex;
@@ -56,9 +56,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>Sexo: <?php echo $sexo; ?></p>
         <p>Correo electrónico: <?php echo $correo; ?></p>
         <p>Número de teléfono: <?php echo $telefono; ?></p>
-        <a href="./index.html">Volver</a>
+        <a href="../index.php">Volver</a>
     </div>
-    <script src="./script/script.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 
 </html>

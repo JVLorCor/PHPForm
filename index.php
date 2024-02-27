@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto">
+    <link rel="shortcut icon" href="./img/icons8-3d-touch-16.png" type="image/x-icon">
     <title>Formulario PHP</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
@@ -12,7 +14,7 @@
 
 <body>
     <svg id="svg"></svg>
-    <form class="main-container" method="POST" action="./send.php">
+    <form class="main-container" method="POST" action="./includes/send.php">
         <h1>Formulario PHP</h1>
         <fieldset class="datos-usuario">
             <label for="nombre">Nombre:</label>
